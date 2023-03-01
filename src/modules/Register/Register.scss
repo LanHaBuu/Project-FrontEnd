@@ -1,0 +1,13 @@
+.register-container {
+    .input-wrapper {
+        margin: 20px 0;
+        width: 200px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        input {
+            height: 20px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+.home-container {
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .buttons {
+        width: 150px;
+        font-size: 18px;
+        display: flex;
+        justify-content: space-between;
+        color: red;
+    }
+}
