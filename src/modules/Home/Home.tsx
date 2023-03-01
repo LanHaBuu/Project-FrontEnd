@@ -4,13 +4,13 @@ import { decodeToken } from "../../function/decodeToken"
 import "./Home.scss"
 
 const Home: React.FC = () => {
-	const { name }: any = decodeToken(localStorage.getItem("token"))
+	const userName: string = decodeToken(localStorage.getItem("token"))?.name
 
 	return (
 		<div className='home-container'>
 			<div className='header'>
 				<h2>Home</h2>
-				<span>{`Xin chao ${name}`}</span>
+				<span>{userName && `Xin chao ${userName}`}</span>
 			</div>
 			<div className='buttons'>
 				<Link to='/register'>Register</Link>
