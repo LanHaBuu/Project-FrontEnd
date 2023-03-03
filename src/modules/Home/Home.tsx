@@ -4,7 +4,7 @@ import { decodeToken } from "../../function/decodeToken"
 import "./Home.scss"
 
 const Home: React.FC = () => {
-	const userName: string = decodeToken(localStorage.getItem("token"))?.name
+	const userName: string = decodeToken(sessionStorage.getItem("token"))?.name
 
 	return (
 		<div className='home-container'>
@@ -16,6 +16,7 @@ const Home: React.FC = () => {
 				<Link to='/register'>Register</Link>
 				<Link to='/login'>Login</Link>
 			</div>
+
 		</div>
 	)
 }

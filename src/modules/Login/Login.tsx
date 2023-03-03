@@ -24,7 +24,7 @@ const Login: React.FC = () => {
 			headers: { "Content-Type": "application/json" },
 		})
 			.then(res => {
-				localStorage.setItem(
+				sessionStorage.setItem(
 					"token",
 					JSON.stringify(res.data.access_token),
 				)
